@@ -1,0 +1,92 @@
+font
+:root{
+    --primary-color : #7286D3;
+    --secondary-color:#8EA7E9;
+}
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    border: none;
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+ .page
+ {
+  display: flex;
+  height: 100vh;
+    width: 100vw;
+}
+.page1{
+    flex: 1;
+    background-color: black;
+    color: white;
+   background: url(./image/blue.png);
+   width: 100%;
+   font-family: JejuHallasan;
+}
+.page1>h1{
+  position: absolute;
+  bottom: 10px;
+  font-size: 70px;
+ font-family:
+}
+ .page2{
+    flex: 1;
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+   padding: 5% 0 4% 8%;
+ }
+ .form{
+    background-color:#8EA7E9;
+    height: 400px;
+    width: 500px;
+    padding: 5% ;
+ }
+ .form >form{
+  margin: 5%;
+    
+ }
+ .input{
+    height: 50px;
+    width: 90%;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+   
+ }
+ a{
+    padding: 0 0 0 65%;
+    margin-top: 5%;
+    color: var(--primary-color);
+ }
+ .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    background-color: (--primary-color);
+
+ }
+ button{
+    height: 45px;
+    width: 200px;
+    border-radius: 13px;
+ }
+ hr{
+    height:1px;
+    width: 160px;
+    background-color: black;
+ }
+ .ou-avec{
+   display: flex;
+ justify-content: center;
+ justify-content: space-around;
+
+ }
