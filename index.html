@@ -3,50 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log into blue oceans</title>
-    <link rel="stylesheet" href="style.css">
+    <title>cours sur les positions</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <!-- creation de la page complete de la log-in a blue oceans -->
- <div class="page">
-    <!-- creation de la 1ere page contenant l'image -->
-    <div class="page1">
-        <h1>blue oceans</h1>
-    </div>
-   <!-- creation de la 2nd page permettant a l'utilisateur de s'identifier -->
-  <div class="page2">
-        <h1>connexion a blue oceans</h1>
-      <!-- creation du formulaire -->
-    <div class="form">
-     <form>
-        <label for="email">Email</label>
-        <br>
-        <input type="email" placeholder="abc@gmail.com" class="input">
-        <br>
-        <label for="mot de passe">Password</label>
-        <br>
-        <input type="password" placeholder="******" class="input">
-        <br>
-        <a href="">mot de passe oublie?</a>
-        <!-- insertion du button -->
-       <div class="button"><button>connexion</button>
-       </div>
-           
-     </form>
-        </div>
-        <div class="ou-avec"> <hr> ou avec
+  <div class="parent">
+    <div class="page1"><h1>blue ocean</h1></div>
+    <div class="page2">
+          <h1>connexion a Blue ocean</h1>
+      <div class="input">
+          <form>
+              <label for="email">Email</label>
+              <br>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com">
+                <br> <br>
+                <label for="password">Mot de Passe</label>
+                <br>
+                  <input type="password" name="password" id="password" placeholder="*******">
+              <div class="lien">
+                  <a href="/">mot de passe oublie?</a> 
+                </div> 
 
-            <hr> </div>
-            <!-- insertion des icons -->
-            <section class="image">
-                <div >
-                    <img src="./image/chercher 1.png" alt="image de google" class="img">
-                    <img src="./image/fb.png" alt="icon de facebook" class="img">
-                    <img src="./image/github (1) 1.png" alt="icon de github" class="img">
-                </div>
-            </section>
+                <div class="button">
+                    <button>connexion</button>
+                </div>             
+           </form>
+          
+           <div class="avec">
+            <hr>
+           <span> ou avec</span> 
+             <hr>
+          </div>
+          <div class="login">
+               <div class="box"><img src="./chercher 1.png" alt=""></div>
+                <div class="box"><img src="./facebook 1.png" alt=""></div> 
+                <div class="box"><img src="./github (1) 1.png" alt=""></div> 
+              </div>
+
     </div>
-    
-</div>
+    </div>
+  </div>
 </body>
 </html>
