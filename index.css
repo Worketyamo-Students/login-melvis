@@ -3,6 +3,7 @@
     --primary :  #7286D3;
     --secondary :  #8EA7E9;
     --tertiary : #D9D9D9;
+    --gradient: linear-gradient(3deg,rgb(27, 24, 24)2% ,rgba(164, 168, 164, 0.01)5.5%);
 }
 *{
     padding: 0;
@@ -28,7 +29,7 @@ body{
     align-items: flex-end;
     justify-content: center;
     background-color: #fff;
-    background: url(./daniel-korpai-8GDCzWrcE3M-unsplash\ 1.png);
+    background: url(./images/blue_oceans.png);
     background-size: cover;
     font-family: poppins;
 }
@@ -40,9 +41,12 @@ body{
     flex: 1;
     padding: 0 7% 0 7%;
 }
-h1{
+.page2>h1{
     margin: 0 10% 10% 10%;
     font-family: poppins;
+}
+h2{
+    visibility: hidden;
 }
 .input{
     height: 80%;
@@ -105,6 +109,7 @@ img{
 @media screen and (max-width:430px){
     body{
         overflow-x: hidden;
+        overflow-y: hidden;
         margin: 0;
         color: white;
         padding: 0;
@@ -116,14 +121,63 @@ img{
             visibility: hidden;
         }
         .page2{
-            background:url(./daniel-korpai-8GDCzWrcE3M-unsplash\ 1.png);   
-            background-image:cover;
-           background: linear-gradient(31deg,rgb(255,0,0,0),10,rgb(0,255,0,0.75),20);
+            background: var(--gradient), url(./images/blue_oceans.png);   
+            background-size:cover;
             padding: 2rem;
-
+            font-family: poppins;
         }
+
         h1{
         display: flex;
         align-items: end;
+        justify-content: space-around;
+        font-family: poppins;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+      //  padding-right: 1rem;
         }
-}
+        h2{
+            visibility: visible;
+            margin: 1,8rem;
+            padding: 1rem;
+            font-family: poppins;
+            height: 2rem;
+            font-size: 2rem;
+        }
+      a{
+        color: #fff;
+      }
+      hr{
+        background-color: #fff;
+      }
+    }
+    /* @media screen and (max-width:430px){
+        body{
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0;
+            //color: white;
+            padding: 0;
+            border: none;
+            height: 100vh;
+            width: 100vw;
+            font-family: poppins;
+        }
+            .parent{
+              display: flex;
+              flex-direction: column;
+              height: 100vh;
+              width: 100vw;
+              }
+              .page1{
+                flex: 1;
+                height: 100%;
+                width: 100%;
+              }
+              .page2{
+                flex: 1;
+                height: 100%;
+                width: 100%;
+              }
+          
+        } */
